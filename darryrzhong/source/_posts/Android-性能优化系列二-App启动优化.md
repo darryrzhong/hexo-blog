@@ -16,7 +16,7 @@ App启动,相信大家都是非常熟悉了,那为何我们需要对App启动做
 
 我们先来看一张流程图
 
-![Android启动流程.png](https://upload-images.jianshu.io/upload_images/5549640-33fc4dabf7839c47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Android启动流程.png](Android-性能优化系列二-App启动优化/1240-20200309132256657.png)
 
 
 
@@ -49,13 +49,13 @@ Android启动流程大致就是这样,我们不需要去深入,只需要大概�
 
 我们先看一下这个黑白屏从哪蹦出来的。
 
-![AppTheme.png](https://upload-images.jianshu.io/upload_images/5549640-2c04c3ec92759272.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![AppTheme.png](Android-性能优化系列二-App启动优化/1240-20200309132302546.png)
 
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-5feb833ca674709e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列二-App启动优化/1240-20200309132305183.png)
 
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-8735fd4be8a1fd79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列二-App启动优化/1240-20200309132308114.png)
 
 看到了吧，最初我们可没有设置这么个东西，这是系统默认给我们App设置的，而且是白色的。
 
@@ -147,7 +147,7 @@ public class App extends Application {
 
 看看我们的简书App就是这样,我基本每次进去都会弹一个dialog
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-8215ca9d6d469d44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![image.png](Android-性能优化系列二-App启动优化/240.png)
 
 
 > 至此,App启动优化方案就介绍完了.当然还有更多优化方案,具体的就要根据业务需求而定了

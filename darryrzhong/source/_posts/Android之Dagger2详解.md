@@ -438,7 +438,7 @@ Engine{name='gear'}
 
 　　下面通过MVP结构图来看一下MVP中各个层次之间的关系。 
 
-![mvp.png](https://upload-images.jianshu.io/upload_images/5549640-9df191c720cd2ce8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![mvp.png](Android之Dagger2详解/1240-20200309132747788.jpeg)
 
 在MVP架构中将这三层分别抽象到各自的接口当中。通过接口将层次之间进行隔离，而Presenter对View和Model的相互依赖也是依赖于各自的接口。这点符合了接口隔离原则，也正是面向接口编程。在Presenter层中包含了一个View接口，并且依赖于Model接口，从而将Model层与View层联系在一起。而对于View层会持有一个Presenter成员变量并且只保留对Presenter接口的调用，具体业务逻辑全部交由Presenter接口实现类中处理。
 

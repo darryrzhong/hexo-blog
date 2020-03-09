@@ -8,7 +8,7 @@ categories: Android
 
 前几天看到这样一个UI效果,然后自己也仿照实现了下:
 
-![开眼app个人中心.gif](https://upload-images.jianshu.io/upload_images/5549640-9e3cecfad8df9334.gif?imageMogr2/auto-orient/strip)
+![开眼app个人中心.gif](Android之AppBarLayout实现悬停吸附伸缩效果/strip-20200309132700685.gif)
 
 
 > 看着挺酷的,也有很多App都用到了这个UI效果,比如开眼App和沪江开心词场就用到了.
@@ -201,7 +201,7 @@ CoordinatorLayout 用来调节和控制子View的滚动，而这些子View 的�
     app:layout_behavior="@string/appbar_scrolling_view_behavior" >
  <!-- 使用此属性指定响应 -->
 ```
- 
+
 
 ##  CollapsingToolbarLayout:
 
@@ -571,7 +571,7 @@ public class PersonPageActivity extends SwipeBackActivity {
 
 效果展示:
 
-![开眼app个人中心.gif](https://upload-images.jianshu.io/upload_images/5549640-7e47a81560bdce78.gif?imageMogr2/auto-orient/strip)
+![开眼app个人中心.gif](Android之AppBarLayout实现悬停吸附伸缩效果/strip-20200309132716736.gif)
 
 
 2.仿[开眼App]搜索悬停界面:
@@ -847,7 +847,7 @@ public class SearchActivity extends AppCompatActivity {
 
 效果展示:
 
-![开眼app搜索记录.gif](https://upload-images.jianshu.io/upload_images/5549640-1e6bdf17608d33ae.gif?imageMogr2/auto-orient/strip)
+![开眼app搜索记录.gif](Android之AppBarLayout实现悬停吸附伸缩效果/strip-20200309132724059.gif)
 
 
 > 好了,到这里关于AppBarLayout三剑客的基本使用就介绍完了,使用三剑客能够实现许多炫酷的UI效果,感兴趣的朋友可以自行自定义.

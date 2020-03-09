@@ -23,13 +23,13 @@ categories: hexo
 如果没有,那就一起来看下面吧(`这里只说windows的安装,因为本人太穷,买不起mac啊o(╥﹏╥)o`)
 
 ### 安装Git
-![安装git.png](https://upload-images.jianshu.io/upload_images/5549640-6357f7847468f282.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![安装git.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134211890.png)
 
 *   Windows：下载并安装[git](https://git-scm.com/download/win)。
 一切按照默认走就行了,没什么特殊的地方.
 
 ### 安装Node.js
-![Nodejs安装.png](https://upload-images.jianshu.io/upload_images/5549640-affa652a4cf53b61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Nodejs安装.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134214803.png)
 
 
 <!--more-->
@@ -43,9 +43,9 @@ categories: hexo
 
 随便找个地方, `Git Bash ->$ npm install -g hexo-cli` 就行了
 我这里直接在桌面上GitBash
-![GitBash.png](https://upload-images.jianshu.io/upload_images/5549640-b16e6205d228e21e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![GitBash.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134216821.png)
 如果出现以下就说明安装成功了
-![success.png](https://upload-images.jianshu.io/upload_images/5549640-6114f3db7039eb70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![success.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134218563.png)
 
 > 好了,到这里我们就算是已经成功完成了第一步:`安装Hexo`
 
@@ -55,17 +55,17 @@ $ cd <文件夹>
 $ npm install
 
 选择你想要的盘符来建立我们的博客站点文件,我这里选择D:/
-![init.png](https://upload-images.jianshu.io/upload_images/5549640-1564927dc14691b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![init.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134222031.png)
 这里的`blog` 是你的文件夹名字,一般默认blog就要行了
 看到下面的提示就说明站点目录建立成功了
-![successHexo.png](https://upload-images.jianshu.io/upload_images/5549640-f431e9ac66e2e7a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![successHexo.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134224370.png)
 
 然后 初始化`$ npm install`
 
-![install.png](https://upload-images.jianshu.io/upload_images/5549640-ad7551d9a4bdd023.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![install.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134226202.png)
 
 ok了,看看你的blog文件是不是这样的,是的话就对了
-![blog.png](https://upload-images.jianshu.io/upload_images/5549640-ff6f52f6837e6ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![blog.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134227882.png)
 
 然后在介绍两个命令 ,以后经常要用到的
 > hexo generate（可简写为hexo g）
@@ -81,12 +81,12 @@ hexo clean
 `Git Bash ->$ hexo g`
  `$ hexo s`
 
-![hexo g.png](https://upload-images.jianshu.io/upload_images/5549640-9e983a6bed9a4bbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![hexo g.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134230079.png)
 
-![localhost.png](https://upload-images.jianshu.io/upload_images/5549640-b3c2dbbc1c767dee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![localhost.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134232051.png)
 
 然后在你的浏览器输入`http://localhost:4000`,查看你的博客.
-![Myblog.png](https://upload-images.jianshu.io/upload_images/5549640-5918ee50f1c270cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Myblog.png](关于Hexo6-0搭建个人博客-基础编/1240-20200309134234256.png)
 
 > 到此为止,你的个人博客就已经搭建完成了,是不是很简单
 

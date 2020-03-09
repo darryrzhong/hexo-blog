@@ -932,7 +932,7 @@ public class Course implements Parcelable {
 在介绍之前我们需要先了解Parcel是什么?Parcel翻译过来是打包的意思,其实就是包装了我们需要传输的数据,然后在Binder中传输,也就是用于跨进程传输数据
 简单来说，Parcel提供了一套机制，可以将序列化之后的数据写入到一个共享内存中，其他进程通过Parcel可以从这块共享内存中读出字节流，并反序列化成对象,下图是这个过程的模型。
 
-![parcel.png](https://upload-images.jianshu.io/upload_images/5549640-9ae605cf1c5476be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![parcel.png](Android之序列化详解/1240-20200309133227097.png)
 
 Parcel可以包含原始数据类型（用各种对应的方法写入，比如writeInt(),writeFloat()等），可以包含Parcelable对象，它还包含了一个活动的IBinder对象的引用，这个引用导致另一端接收到一个指向这个IBinder的代理IBinder。
 
@@ -993,7 +993,7 @@ Parcelable则是以IBinder作为信息载体，在内存上开销比较小，因
   Intent在启动其他组件时，会离开当前应用程序进程，进入ActivityManagerService进程（intent.prepareToLeaveProcess()），这也就意味着，Intent所携带的数据要能够在不同进程间传输。首先我们知道，Android是基于Linux系统，不同进程之间的java对象是无法传输，所以我们此处要对对象进行序列化，从而实现对象在 应用程序进程 和 ActivityManagerService进程 之间传输。
   而Parcel或者Serializable都可以将对象序列化，其中，Serializable使用方便，但性能不如Parcel容器，后者也是Android系统专门推出的用于进程间通信等的接口
 
-  ![start_activity_process.jpg](https://upload-images.jianshu.io/upload_images/5549640-04af16620bc56808.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![start_activity_process.jpg](Android之序列化详解/1240-20200309133230824.jpeg)
 
 ### 参考
 

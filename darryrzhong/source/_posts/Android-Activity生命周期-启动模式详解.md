@@ -21,7 +21,7 @@ categories: Android
 - Task是属于Android系统的任务栈,一个Task中可以包含有多个application的Activity
 - Activity代码属于Application，但是Task属于Android操作系统
 
-![图片2.jpg](https://upload-images.jianshu.io/upload_images/5549640-bcbfabfa2139ab08.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片2.jpg](Android-Activity生命周期-启动模式详解/1240.jpeg)
 
 - Android中如何查看Task
 
@@ -36,7 +36,7 @@ categories: Android
 
 2.通过手机navigation方式查看
 
-![图片4.png](https://upload-images.jianshu.io/upload_images/5549640-2c03a1019a87bd30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片4.png](Android-Activity生命周期-启动模式详解/1240-20200309125420909.png)
 
 ## Task启动方式
 
@@ -44,9 +44,9 @@ categories: Android
 
 此种方式属于Activity生命周期由不可见到获得焦点的范畴
 
-![图片5.png](https://upload-images.jianshu.io/upload_images/5549640-33c6cbf9aeee057b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片5.png](Android-Activity生命周期-启动模式详解/1240-20200309125424561.png)
 
-![图片7.jpg](https://upload-images.jianshu.io/upload_images/5549640-e7beb78bb50b3431.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片7.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125428575.jpeg)
 
 - 新建模式
 
@@ -54,11 +54,11 @@ categories: Android
 
 1.通过通知栏打开
 
-![图片8.jpg](https://upload-images.jianshu.io/upload_images/5549640-eea70b768d632d47.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片8.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125432435.jpeg)
 
 2.通过其他第三方App唤醒
 
-![图片9.jpg](https://upload-images.jianshu.io/upload_images/5549640-267e4c877c438d9f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片9.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125435845.jpeg)
 
 
 
@@ -88,9 +88,9 @@ luncher启动方式分为两种情况
 
 2.Task已经存在
 
-![图片10.png](https://upload-images.jianshu.io/upload_images/5549640-0eaabbb644d518a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片10.png](Android-Activity生命周期-启动模式详解/1240-20200309125444517.png)
 
-![图片11.png](https://upload-images.jianshu.io/upload_images/5549640-4334d627cb8abca1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片11.png](Android-Activity生命周期-启动模式详解/1240-20200309125447681.png)
 
 
 
@@ -98,11 +98,11 @@ luncher启动方式分为两种情况
 
 - activity生命周期
 
-![图片12.jpg](https://upload-images.jianshu.io/upload_images/5549640-882f212097ddd4e7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片12.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125450091.jpeg)
 
 - 对于activity生命周期中各个方法,需要记住他们是成对出现的
 
-![图片13.jpg](https://upload-images.jianshu.io/upload_images/5549640-e6e2539a9c4ecc93.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片13.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125452539.jpeg)
 
 - activity相邻状态之间的区别(面试重点)
 
@@ -112,7 +112,7 @@ luncher启动方式分为两种情况
 
 2.从ActivityB 返回到ActivityA时的生命周期走向
 
-![图片14.jpg](https://upload-images.jianshu.io/upload_images/5549640-70829b4560ab3f18.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片14.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125454657.jpeg)
 
 从上图我们可以看到,当ActivityA启动ActivityB时,执行到onPause()时,并没有立即执行onStop();
 
@@ -154,7 +154,7 @@ onStop阶段Activity还没有被销毁，对象还在内存中，此时可以通
 
 - onNewIntent的生命周期
 
-![图片15.jpg](https://upload-images.jianshu.io/upload_images/5549640-907ef8cd9fa74b7e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片15.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125459649.jpeg)
 
 
 
@@ -168,7 +168,7 @@ onStop阶段Activity还没有被销毁，对象还在内存中，此时可以通
 
 介绍如图:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-e1c3f5132bfeff7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-Activity生命周期-启动模式详解/1240-20200309125502554.png)
 
 
 
@@ -198,7 +198,7 @@ c、如果从应用内启动的standard activity的Affinity就是App默认的Aff
 
 分析图如下:
 
-![图片16.jpg](https://upload-images.jianshu.io/upload_images/5549640-78a8a9b24ee89609.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片16.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125506171.jpeg)
 
 
 
@@ -208,7 +208,7 @@ c、如果从应用内启动的standard activity的Affinity就是App默认的Aff
 
 分析如下:
 
-![图片17.jpg](https://upload-images.jianshu.io/upload_images/5549640-6ebb78e67a786e8c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图片17.jpg](Android-Activity生命周期-启动模式详解/1240-20200309125508719.jpeg)
 
 
 
@@ -228,7 +228,7 @@ c、如果从应用内启动的standard activity的Affinity就是App默认的Aff
 
 使用流程如下:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-1a40fb934a926df2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-Activity生命周期-启动模式详解/1240-20200309125511178.png)
 
 对于Intent Flag 种类太多了,这里就不一一解释了,
 
@@ -240,7 +240,7 @@ c、如果从应用内启动的standard activity的Affinity就是App默认的Aff
 
 ## Activity四种启动模式的应用场景
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-e277d4d6fe8df598.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-Activity生命周期-启动模式详解/1240-20200309125513357.png)
 
 
 

@@ -8,7 +8,7 @@ categories: Android
 # 前言
 随着近几年移动开发越来越成熟,市场对于Android开发人员的要求也越来越高,而对于大多数人来说,也是越来越多的新技术和跨平台框架需要学习,为此大多是人都很迷茫,不知道要学什么,在这里给大家分享一个Android学习进阶的思维大纲,以至于大家对于Android学习树立点方向,少走一点弯路,提高学习效率,节省时间成本.
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-7b52be8a118a9214.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-进阶学习思维大纲/1240-20200309132240281.png)
 
 
 [大纲地址](http://naotu.baidu.com/file/12435141647f83f55799f1e3a9b336a5?token=309b64e441344599)

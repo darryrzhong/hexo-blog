@@ -27,7 +27,7 @@ JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式
 
 ## JSON解析
 
-![jsonjiexiqi.png](https://upload-images.jianshu.io/upload_images/5549640-b2af3c88a0caf883.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![jsonjiexiqi.png](java系列之json解析/1240-20200309133348995.png)
 
 ## 语法
 
@@ -42,7 +42,7 @@ JSON具有以下这些形式：
 
 对象是一个无序的“‘名称/值’对”集合。一个对象以“{”（左括号）开始，“}”（右括号）结束。每个“名称”后跟一个“:”（冒号）；“‘名称/值’ 对”之间使用“,”（逗号）分隔。
 
-![object.gif](https://upload-images.jianshu.io/upload_images/5549640-a8ee686a5a83f8cb.gif?imageMogr2/auto-orient/strip)
+![object.gif](java系列之json解析/strip-20200309133352592.gif)
 
 ```json
 	{
@@ -53,7 +53,7 @@ JSON具有以下这些形式：
 
 数组是值（value）的有序集合。一个数组以“[”（左中括号）开始，“]”（右中括号）结束。值之间使用“,”（逗号）分隔。
 
-![array.gif](https://upload-images.jianshu.io/upload_images/5549640-07160a3d27f16fa2.gif?imageMogr2/auto-orient/strip)
+![array.gif](java系列之json解析/strip-20200309133355549.gif)
 
 ```json
 "courses": [
@@ -66,7 +66,7 @@ JSON具有以下这些形式：
 
 值（*value*）可以是双引号括起来的字符串（*string*）、数值(number)、`true`、`false`、 `null`、对象（object）或者数组（array）。这些结构可以嵌套。
 
-![value.gif](https://upload-images.jianshu.io/upload_images/5549640-89139782b6d50e32.gif?imageMogr2/auto-orient/strip)
+![value.gif](java系列之json解析/strip-20200309133358450.gif)
 
 ```json
 {
@@ -92,7 +92,7 @@ JSON具有以下这些形式：
 
 字符串（**string**）与C或者Java的字符串非常相似。
 
-![string.gif](https://upload-images.jianshu.io/upload_images/5549640-950d9e0274b71665.gif?imageMogr2/auto-orient/strip)
+![string.gif](java系列之json解析/strip-20200309133401457.gif)
 
 ```json
 {
@@ -102,7 +102,7 @@ JSON具有以下这些形式：
 
 数值（*number*）也与C或者Java的数值非常相似。除去未曾使用的八进制与十六进制格式。除去一些编码细节。
 
-![number.gif](https://upload-images.jianshu.io/upload_images/5549640-a056821868917b0c.gif?imageMogr2/auto-orient/strip)
+![number.gif](java系列之json解析/strip-20200309133404168.gif)
 
 ```json
 {
@@ -478,7 +478,7 @@ implementation 'com.alibaba:fastjson:1.2.57'
 结果词法分析后，得到一组 Token，如下：
 {key : value, }
 
-![cifafenxi.png](https://upload-images.jianshu.io/upload_images/5549640-6b018ac861b1deb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![cifafenxi.png](java系列之json解析/1240-20200309133413279.png)
 词法分析解析出 Token 序列后，接下来要进行语法分析。语法分析的目的是根据 JSON 文法检查上面 Token 序列所构成的 JSON 结构是否合法。比如 JSON 文法要求非空 JSON 对象以键值对的形式出现，形如 object = {string : value}。如果传入了一个格式错误的字符串，比如
 
 ```json
@@ -490,7 +490,7 @@ implementation 'com.alibaba:fastjson:1.2.57'
 
 那么在语法分析阶段，语法分析器分析完 Token name后，认为它是一个符合规则的 Token，并且认为它是一个键。接下来，语法分析器读取下一个 Token，期望这个 Token 是 :。但当它读取了这个 Token，发现这个 Token 是 ,，并非其期望的:，于是文法分析器就会报错误。
 
-![yufafenxi.png](https://upload-images.jianshu.io/upload_images/5549640-c4067d7374e7f76d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![yufafenxi.png](java系列之json解析/1240-20200309133415916.png)
 
 ### JSON解析分析小结
 
@@ -1034,35 +1034,35 @@ parseJsonObject 解析完 { Token 后，接下来它将期待 STRING 类型的 T
 
 充当的了一个解析器的角色
 
-![gson.png](https://upload-images.jianshu.io/upload_images/5549640-b71e1841e8d68543.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![gson.png](java系列之json解析/1240-20200309133429772.png)
 
 ### JsonElement
 
 该类是一个抽象类，代表着json串的某一个元素。这个元素可以是一个Json(JsonObject)、可以是一个数组(JsonArray)、可以是一个Java的基本类型(JsonPrimitive)、当然也可以为null(JsonNull);JsonObject,JsonArray,JsonPrimitive，JsonNull都是JsonElement这个抽象类的子类。JsonElement提供了一系列的方法来判断当前的JsonElement
 
 各个JsonElement的关系可以用如下图表示：
-![jsonelement.png](https://upload-images.jianshu.io/upload_images/5549640-bc3840d7c4b0d5bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![jsonelement.png](java系列之json解析/1240-20200309133433270.png)
 
 JsonObject对象可以看成 name/values的集合，而这写values就是一个个JsonElement,他们的结构可以用如下图表示：
-![jsonelement1.png](https://upload-images.jianshu.io/upload_images/5549640-84b9ee1efefffa63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![jsonelement1.png](java系列之json解析/1240-20200309133435965.png)
 
 ### JsonDeserializer的工作原理
 
-![deserize.png](https://upload-images.jianshu.io/upload_images/5549640-5d4a49d8f74ba605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![deserize.png](java系列之json解析/1240-20200309133438467.png)
 
 ### TypeAdapter的工作原理
 
-![typeadapter.png](https://upload-images.jianshu.io/upload_images/5549640-c94a8193d38b08bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![typeadapter.png](java系列之json解析/1240-20200309133441446.png)
 
 ### Gson的整体解析原理
 
-![gson1.png](https://upload-images.jianshu.io/upload_images/5549640-ef118ce785178a73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![gson1.png](java系列之json解析/1240-20200309133444236.png)
 
-![gsonwork.png](https://upload-images.jianshu.io/upload_images/5549640-a474c70a3e4c0dc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![gsonwork.png](java系列之json解析/1240-20200309133448072.png)
 
 ### Gson的反射解析机制
 
-![json_refect.png](https://upload-images.jianshu.io/upload_images/5549640-070ddb0495bc1989.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![json_refect.png](java系列之json解析/1240-20200309133452928.png)
 
 ## Gson解析常见的错误
 

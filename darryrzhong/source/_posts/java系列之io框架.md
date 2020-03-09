@@ -35,7 +35,7 @@ categories: java
 2. 非流式部分——如：File类、RandomAccessFile类和FileDescriptor等类
 3. 其他——文件读取部分的与安全相关的类，如：SerializablePermission类，以及与本地操作系统相关的文件系统的类，如：FileSystem类和Win32FileSystem类和WinNTFileSystem类。
 
-![IO图谱.png](https://upload-images.jianshu.io/upload_images/5549640-5d8da3504e5eb19d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![IO图谱.png](java系列之io框架/1240-20200309133318419.png)
 
 # IO详细介绍
 
@@ -63,7 +63,7 @@ categories: java
 
 ​       下面的图是一个关于字节流的图谱，这张图谱比较全面的概况了我们字节流中间的各个类以及他们之间的关系。
 
-![输入输出流.jpg](https://upload-images.jianshu.io/upload_images/5549640-29a762c885f7339b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![输入输出流.jpg](java系列之io框架/1240-20200309133323218.jpeg)
 
 #### 字节流的学习过程
 
@@ -83,7 +83,7 @@ categories: java
 
 下图则是一个关于字符流的图谱，这张图谱比较全面的概况了我们字符流中间的各个类以及他们之间的关系。
 
-![字符输入输出流.jpg](https://upload-images.jianshu.io/upload_images/5549640-616bb4e5d6df3ebd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![字符输入输出流.jpg](java系列之io框架/1240-20200309133325980.jpeg)
 
 ​		字符流的学习和字节流的学习是一样的，它和字节流有着同样的发展过程，只是，字节流面向的是我们未知或者即使知道了他们的编码格式也意义不大的文件（png，exe, zip）的时候是采用字节，而面对一些我们知道文件构造我们就能够搞懂它的意义的文件（json，xml）等文件的时候我们还是需要以字符的形式来读取，所以就出现了字符流。reader 和 Stream最大的区别我认为是它包含了一个readline（）接口，这个接口标明了，一行数据的意义，这也是可以理解的，因为自有字符才具备行的概念，相反字节流中的行也就是一个字节符号。
 
@@ -141,11 +141,11 @@ InputStreamReader中的StreamDecoder：
 
 
 
-![字节与字符输入流.jpg](https://upload-images.jianshu.io/upload_images/5549640-8f36b631c53c2b7b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![字节与字符输入流.jpg](java系列之io框架/1240-20200309133329346.jpeg)
 
 同样的字节与字符输出流字节的关系也如下图所示
 
-![字节与字符输出流.jpg](https://upload-images.jianshu.io/upload_images/5549640-37a9d127b222b290.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![字节与字符输出流.jpg](java系列之io框架/1240-20200309133331558.jpeg)
 
 #### **字节流与字符流的区别**
 

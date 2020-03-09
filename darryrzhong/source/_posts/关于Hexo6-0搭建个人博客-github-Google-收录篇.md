@@ -27,30 +27,30 @@ categories: hexo
 ####2.新建仓库
 
 
-![create1.png](https://upload-images.jianshu.io/upload_images/5549640-732073ccba5851c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![create1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134103207.png)
 
 #### 3.配置SSH
 
 <!--more-->
- 
+
  
 
 >生成ssh:
 
 Linux 与 Mac 都是默认安装了 SSH ，而 Windows 系统安装了 Git Bash 应该也是带了 SSH的。大家可以在终端（win下在 Git Bash 里）输入 ssh 如果出现以下提示证明你本机已经安
 装 SSH， 否则请搜索自行安装下
-![ssh1.png](https://upload-images.jianshu.io/upload_images/5549640-7f9e9e8240c9692c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134106273.png)
 
 >添加ssh:
 
-![settings.png](https://upload-images.jianshu.io/upload_images/5549640-713cbfc6936436db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![settings.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134108706.png)
 
-![ssh.png](https://upload-images.jianshu.io/upload_images/5549640-a8cdd6a8465007c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134110773.png)
 
-![ssh1.png](https://upload-images.jianshu.io/upload_images/5549640-dd6eea935a23a5a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134112742.png)
 
 这个.ssh文件一般是在系统C盘下的用户下,里面的文件全部是隐藏文件设置显示就可以看到了.
-![ssh.png](https://upload-images.jianshu.io/upload_images/5549640-aa9adce99038e333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134115399.png)
 将文件里面的公钥复制到上面,添加就可以了.
 
 #### 4.提交项目到github上
@@ -69,7 +69,7 @@ deploy:
 这里同时托管到了`github`和`coding`上,如果没有配置coding的话,建议先看上篇[百度+coding](),这里只托管到`github`上,所以把`coding`配置删除,否则`push`会报错.
 
 其中地址在这里:
-![push.png](https://upload-images.jianshu.io/upload_images/5549640-ad4244d7ce4c2b8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![push.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134119758.png)
 
 在Git Bash 下执行命令:
 ```
@@ -77,10 +77,10 @@ hexo g
 hexo d
 ```
 如下则表示站点托管成功.
-![push1.png](https://upload-images.jianshu.io/upload_images/5549640-ce5e9dedff28e8a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![push1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134121520.png)
 
 在进入我们的github中看看,就不再是空空如也了
-![github.png](https://upload-images.jianshu.io/upload_images/5549640-db71150b04bc89ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![github.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134123967.png)
 
 打开浏览器输入xxxxx.github.io就可以成功访问到我们的站点了.
 
@@ -93,12 +93,12 @@ hexo d
 分别是`192.30.252.154`和`192.30.252.153`;还分配了一个单独域名给每个站点博客,就是之前的`xxxxx.github.io`,所以每一个github账户只能创建一个这样的仓库,分配一个这样的地址.
 
 接下来,登录万网设置DNS云服务器解析:
-![ip.png](https://upload-images.jianshu.io/upload_images/5549640-9191e01f335c8732.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ip.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134127732.png)
 
 添加完解析之后,设置github域名绑定就完功了.
-![ip1.png](https://upload-images.jianshu.io/upload_images/5549640-294f690c0f1f4202.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ip1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134129337.png)
 
-![ip2.png](https://upload-images.jianshu.io/upload_images/5549640-a9d2c604815882a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ip2.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134131155.png)
 
 > 到这里我们就成功将站点项目托管到github上了,并且成功设置了我们自己的个性域名了.
 
@@ -107,34 +107,34 @@ hexo d
 
 Google收录和百度的做法是一样的,异曲同工:
 #### 1.首先进入[google站点平台](https://www.google.com/webmasters/#?modal_active=none)
-![google.png](https://upload-images.jianshu.io/upload_images/5549640-c36a4720a5213044.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![google.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134134064.png)
 
 #### 2.没有google账号的话,需要注册一个,有的话就直接登录
-![google1.png](https://upload-images.jianshu.io/upload_images/5549640-515c804280a1dde9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![google1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134135908.png)
 
 #### 3.提交博客站点(个性域名),验证所有权.
-![add.png](https://upload-images.jianshu.io/upload_images/5549640-ea6abdbb410c9167.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![add.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134137475.png)
 
-![add1.png](https://upload-images.jianshu.io/upload_images/5549640-481068334e7bfa21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![add1.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134139538.png)
 
-![google2.png](https://upload-images.jianshu.io/upload_images/5549640-0c656a4b12548b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![google2.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134142017.png)
 
 
 这里我们选择最简单的域名解析方法,按照步骤一步一步来就行了.
 
-![dns.png](https://upload-images.jianshu.io/upload_images/5549640-650b7be8d7a73907.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![dns.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134144431.png)
 
 #### 4.提交站点地图
-![sitemap.png](https://upload-images.jianshu.io/upload_images/5549640-769b37a4827c1b74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![sitemap.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134149453.png)
 
 验证完所有权后,就可以提交我们的站点地图sitemap了.
-![map.png](https://upload-images.jianshu.io/upload_images/5549640-ea167d923be2c3bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![map.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134151123.png)
 添加/测试站点地图
-![addmap.png](https://upload-images.jianshu.io/upload_images/5549640-b0b3507000ce34af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![addmap.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134153407.png)
 提交成功后,我们的站点就已经被Google收录了.
 
 折腾了这么久,一起来看看成果吧
-![blog.png](https://upload-images.jianshu.io/upload_images/5549640-bbdca98fde83f322.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![blog.png](关于Hexo6-0搭建个人博客-github-Google-收录篇/1240-20200309134156711.png)
 
 > 到这里我们就成功将站点项目托管到github上,并且配置上了我们的个性域名,还被Google收录了,是不是有点小激动,成就感爆棚,哈哈.
 

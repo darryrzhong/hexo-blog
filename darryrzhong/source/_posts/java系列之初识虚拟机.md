@@ -119,9 +119,9 @@ jdk1.8以后大小就只受本机总内存的限制
 
 # 站在线程角度来看
 
-![clip_image002.jpg](https://upload-images.jianshu.io/upload_images/5549640-7e84275fb0f58758.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![clip_image002.jpg](java系列之初识虚拟机/1240-20200309133536138.jpeg)
 
-![clip_image004.jpg](https://upload-images.jianshu.io/upload_images/5549640-58fe9bb42ebca185.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![clip_image004.jpg](java系列之初识虚拟机/1240-20200309133538603.jpeg)
 
 # 深入辨析堆和栈
 

@@ -11,60 +11,59 @@ categories: 开源Demo
 ## 项目结构
 1.主界面主要分【每日精选】 【发现更多】 【热门排行】三个模块.
 效果图如下:
-![每日精选.jpeg](https://upload-images.jianshu.io/upload_images/5549640-ef22c0941a6f9fdf.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![每日精选.jpeg](Android入门开源项目之仿开眼视频APP/240.jpeg)
 
-![发现更多.jpeg](https://upload-images.jianshu.io/upload_images/5549640-72381624c9e2d456.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![发现更多.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132529982.jpeg)
 
-![热门排行.jpeg](https://upload-images.jianshu.io/upload_images/5549640-ea4e23af94e8b695.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![热门排行.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132533139.jpeg)
 
 <!--more-->
 
-
 2.侧滑菜单界面:主要分【离线缓存】 【观看记录】 【热映电影】【分享】 【更多】 【天气】【关于】 【主题】 【个人中心】九个模块.
 侧滑菜单界面如下:
-![侧滑.jpeg](https://upload-images.jianshu.io/upload_images/5549640-f25802fff596cf38.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![侧滑.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132536345.jpeg)
 
-![侧滑.jpeg](https://upload-images.jianshu.io/upload_images/5549640-e73fa825ffc5e8ba.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![侧滑.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132539153.jpeg)
 
 ## UI效果展示:
 1.【离线缓存】:支持视频下载、存储空间提示、文件删除等功能
 
-![无下载记录.jpeg](https://upload-images.jianshu.io/upload_images/5549640-e6f0aa7c95496414.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![无下载记录.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132541725.jpeg)
 
-![已下载.jpeg](https://upload-images.jianshu.io/upload_images/5549640-22502ad67bd27a00.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![已下载.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132543799.jpeg)
 
-![删除.jpeg](https://upload-images.jianshu.io/upload_images/5549640-6df934bdec5af60f.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![删除.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132545980.jpeg)
 
 2.【观看记录】:实现账号同步观看记录、清空记录等功能
 
-![观看记录.jpeg](https://upload-images.jianshu.io/upload_images/5549640-758ce1156da9ebf9.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![观看记录.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132548093.jpeg)
 
-![观看记录.jpeg](https://upload-images.jianshu.io/upload_images/5549640-3e1ff91fa7453947.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![观看记录.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132550277.jpeg)
 
 3.【热映电影】:实现最近影院热播电影介绍及预告片观看
-![电影介绍.jpeg](https://upload-images.jianshu.io/upload_images/5549640-35a505ad49db12ef.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![电影介绍.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132553312.jpeg)
 
-![预告观看.jpeg](https://upload-images.jianshu.io/upload_images/5549640-394b659973461ca5.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/480)
+![预告观看.jpeg](Android入门开源项目之仿开眼视频APP/480.jpeg)
 
 4.【分享】:实现微信、朋友圈、QQ空间、微博的第三方分享
-![分享.jpeg](https://upload-images.jianshu.io/upload_images/5549640-62bf4c03c3bad879.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![分享.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132558292.jpeg)
 
-![视频分享.jpeg](https://upload-images.jianshu.io/upload_images/5549640-7dda606a6448a767.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![视频分享.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132559597.jpeg)
 
-![朋友圈分享.jpeg](https://upload-images.jianshu.io/upload_images/5549640-63ba699c652a2db7.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![朋友圈分享.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132601752.jpeg)
 
 5.【关键词搜索】:实现关键词搜索相关视频,同步搜索历史记录
-![关键词搜索.jpeg](https://upload-images.jianshu.io/upload_images/5549640-200de7d533d9df94.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![关键词搜索.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132604582.jpeg)
 
-![搜索结果.jpeg](https://upload-images.jianshu.io/upload_images/5549640-b91201187b55d9b6.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![搜索结果.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132606880.jpeg)
 
 
 
 6.【个人中心】 实现实名制手机注册登录,第三方qq登录,同步用户观看动态等功能
 
-![Screenshot_2018-09-17-12-10-45.jpeg](https://upload-images.jianshu.io/upload_images/5549640-c5dab18383a13bc0.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![Screenshot_2018-09-17-12-10-45.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132609123.jpeg)
 
-![Screenshot_2018-09-17-12-10-56.jpeg](https://upload-images.jianshu.io/upload_images/5549640-f74b79b7053f6f34.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
+![Screenshot_2018-09-17-12-10-56.jpeg](Android入门开源项目之仿开眼视频APP/240-20200309132611393.jpeg)
 
 
 

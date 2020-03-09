@@ -43,7 +43,7 @@ https://source.android.google.cn/devices/tech/dalvik/gc-debug
 
   **ART 预先编译机制**，在安装时对 dex 文件执行dexopt优化之后再将odex进行 AOT 提前编译操作，编译为OAT（实际上是ELF文件）可执行文件（机器码）。（相比做过ODEX优化，未做过优化的DEX转换成OAT要花费更长的时间）
 
-![dex.png](https://upload-images.jianshu.io/upload_images/5549640-68d1272c31b84033.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![dex.png](Android之热修复核心原理-ClassLoader类加载/1240-20200309133141482.png)
 
 
 
@@ -96,7 +96,7 @@ class Class<T> {
 
   它们之间的关系如下：
 
-![ClassLoader.png](https://upload-images.jianshu.io/upload_images/5549640-6bc552ce8b01f0e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ClassLoader.png](Android之热修复核心原理-ClassLoader类加载/1240-20200309133151676.png)
 
 `PathClassLoader`与`DexClassLoader`的共同父类是`BaseDexClassLoader`。
 
@@ -280,7 +280,7 @@ public Class findClass(String name, List<Throwable> suppressed) {
 
 ​	`PathClassLoader`中存在一个Element数组，Element类中存在一个dexFile成员表示dex文件，即：APK中有X个dex，则Element数组就有X个元素。
 
-![类查找.png](https://upload-images.jianshu.io/upload_images/5549640-1198ca3d0450cc5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![类查找.png](Android之热修复核心原理-ClassLoader类加载/1240-20200309133157869.png)
 
 ​	在`PathClassLoader`中的Element数组为：[patch.dex , classes.dex , classes2.dex]。如果存在**Key.class**位于patch.dex与classes2.dex中都存在一份，当进行类查找时，循环获得`dexElements`中的DexFile，查找到了**Key.class**则立即返回，不会再管后续的element中的DexFile是否能加载到**Key.class**了。	
 

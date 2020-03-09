@@ -40,7 +40,7 @@ categories: Android
 * App应用程序通过 Retrofit 请求网络，实际上是使用 Retrofit 接口层封装请求参数、Header、Url 等信息，之后由 OkHttp 完成后续的请求操作
 * 在服务端返回数据之后，OkHttp 将原始的结果交给 Retrofit，Retrofit根据用户的需求对结果进行解析
 
-![请求流程](https://upload-images.jianshu.io/upload_images/5549640-93219ec2c71748f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![请求流程](Android-Retrofit-2-5-0使用基础详解/1240-20200309132110476.png)
 
 
 ## 具体使用

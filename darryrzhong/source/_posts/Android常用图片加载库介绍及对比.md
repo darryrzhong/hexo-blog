@@ -78,7 +78,7 @@ Glide 不仅是一个图片缓存，它支持 Gif、WebP、缩略图,甚至是 V
 `Fresco`是由Facebook开源的用于管理图像及其使用内存的Android库
 
 * 功能介绍
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-73cb5e262a6e8ff4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android常用图片加载库介绍及对比/1240-20200309132434292.png)
 
 > 具体功能请前往[官方文档](https://www.fresco-cn.org/support.html)查看
 

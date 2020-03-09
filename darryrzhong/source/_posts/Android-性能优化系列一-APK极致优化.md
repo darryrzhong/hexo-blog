@@ -20,10 +20,10 @@ categories: Android
 
 Android 本身是不支持直接导入svg文件的,所以我们需要将svg 文件进行转换一下.如下:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-c2c6d769b5f54ef4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132333631.png)
 
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-d399e9b7f1e6cf71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132337297.png)
 
 使用如下:
 
@@ -59,7 +59,7 @@ Android 本身是不支持直接导入svg文件的,所以我们需要将svg 文�
 Tint着色器能够实现图片变色 ,利用Tint显示不同颜色的图片 ,在原本需要多张相同图片不同颜色的情况,能够减少apk的体积
 
 UI效果如下:
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-735ea22b7247063e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132340996.png)
 
 注意了,这是同一张图片的不同效果
 
@@ -104,15 +104,15 @@ Android studio 自带功能,可以自行配置需要的icon尺寸,打包时会�
 ```
 
 此时,drawable文件如下:
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-a51172eb85268a64.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132344690.png)
 
 
 打包后如下:
 
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-bb2498af626656e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132347381.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-2bf14e68b6fa95fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132349524.png)
 
 
 
@@ -124,10 +124,10 @@ WebP格式，谷歌开发的一种旨在加快图片加载速度的图片格式�
 
 使用如下:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-0cb61e63cd993b69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132352181.png)
 
 转化前后对比
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-a55da2f269f58fd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132356836.png)
 
 
 
@@ -138,16 +138,16 @@ WebP格式，谷歌开发的一种旨在加快图片加载速度的图片格式�
 
 使用如下
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-0c4425f5bf8127f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132359270.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-8a9ed86ef9a4e777.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132401125.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-829f9aff6addddcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132402986.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-b430198dbc607f25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132405054.png)
 
 * 使用   shrinkResources  进行移除,配合 //Zipalign优化
- 
+
 
 > 使用 shrinkResources   必须先开启代码混淆 minifyEnabled
 
@@ -168,7 +168,7 @@ buildTypes {
 ```
 
 打包后效果如下:
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-f008f56fb076ba28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132411744.png)
 
 虽然图片还存在. 但400多k的大小变成了2B
 
@@ -180,7 +180,7 @@ buildTypes {
 
 原始包如下:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-8a7116fff2fc119f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132416697.png)
 
 
 原始包中存在各国的语言,所以我们一般只需要保留中文即可,配置如下:
@@ -202,7 +202,7 @@ buildTypes {
 
 配置后如下:
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-be7063240e899685.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-性能优化系列一-APK极致优化/1240-20200309132418980.png)
 
 ##   七、动态库打包配置
 

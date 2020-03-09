@@ -7,7 +7,7 @@ categories: Android
 
 # 前言
 * 在Android开发中，时间轴的 UI非常常见，如下图：
-![TIM图片20190327232833.jpg](https://upload-images.jianshu.io/upload_images/5549640-d7336ab6e9d578b9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM图片20190327232833.jpg](Android自定义View-快递时间轴实现/1240-20200309133249394.jpeg)
 
 * 储备知识:
 1.自定义view基础
@@ -16,7 +16,7 @@ categories: Android
 
 ## 具体实现
 1.最终效果如下:
-![TIM截图20190327231820.png](https://upload-images.jianshu.io/upload_images/5549640-7dcc8332e13a4132.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20190327231820.png](Android自定义View-快递时间轴实现/1240-20200309133252872.png)
 
 
 <!--more-->
@@ -28,9 +28,9 @@ categories: Android
 
 3.详细设计
 
-![TIM截图20190327235039.png](https://upload-images.jianshu.io/upload_images/5549640-4cbf9b5b5d1c47a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20190327235039.png](Android自定义View-快递时间轴实现/1240-20200309133255053.png)
 
-![TIM截图20190327235010.png](https://upload-images.jianshu.io/upload_images/5549640-da8c7743a4115fff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20190327235010.png](Android自定义View-快递时间轴实现/1240-20200309133257058.png)
 
 4.具体实现
 
@@ -367,7 +367,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 至此,自定义RecyclerView就实现完成了.
-![TIM截图20190327231820.png](https://upload-images.jianshu.io/upload_images/5549640-97c34967e42aef5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20190327231820.png](Android自定义View-快递时间轴实现/1240-20200309133303526.png)
 
 
 ## 参考文章:

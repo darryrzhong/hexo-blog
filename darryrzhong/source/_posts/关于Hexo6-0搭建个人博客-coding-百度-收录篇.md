@@ -17,10 +17,10 @@ categories: hexo
 >本篇博文将手把手教大家打造线上个人站点,设置个性域名,以及托管项目到[github](https://github.com/)及[coding](https://coding.net/)上,同时让[Google](https://www.google.com/search?rlz=1C1CHWL_zh-CNSG777SG777&ei=P1MGW9DZGJL4zgLr25SoDQ&q=darryrzhong&oq=darryrzhong&gs_l=psy-ab.3...33.33.0.256.1.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..1.0.0....0.MrNV629Y62k)和[百度](https://www.baidu.com/s?tn=99006304_1_oem_dg&isource=infinity&wd=darryrzhong)两大搜索引擎收录你的站点,提升站点的自然流量.
 
 # 1. 购买个性域名
-  
+
 估计大家折腾了这么久也就是为 了拥有一个自己的个性站点,所以强烈建议大家为自己的博客站点配置一个独一无二的个性域名.我这里选择阿里旗下的[万网](https://wanwang.aliyun.com/?spm=5176.8142029.735711.62.f0586d3eFXYcmo);
 域名种类如下:
-![site.png](https://upload-images.jianshu.io/upload_images/5549640-c67c560694bc56fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![site.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309133954534.png)
 
 >有大家常见的.com、.cn、net等等,不过这些都比较贵,当然你不缺钱的话.com这些常见的自然是最好的选择了.像我们这种穷苦人家就只能用用便宜的啦( ๑ŏ ﹏ ŏ๑ )伤心.
 
@@ -31,7 +31,7 @@ categories: hexo
 
 ##### 1.去万网注册账号
 ##### 2.购买你想要的域名
-![query.png](https://upload-images.jianshu.io/upload_images/5549640-4d57f7fb69956e65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![query.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309133957573.png)
 输入你想要的个性域名,如果没有被注册的话,就可以直接购买了.
 好了,这样我们就有自己的个性域名了,下面教大家怎么配置.
 
@@ -40,32 +40,33 @@ categories: hexo
 
 ##### 1.注册coding账户
 ##### 2.创建新项目
-![crate.png](https://upload-images.jianshu.io/upload_images/5549640-65560b323aa85222.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![crate.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134000056.png)
 这里创建项目的时候,网上很多教程说是要项目名称和账户名称相同,这个只是方便使用ccoding提供的地址访问,我们这里既然要配置自己的域名,就不用一样了,而且一样看起来很别扭,可以和我一样后缀加上个.blog.
+
 ##### 3.添加SSH公钥
 
 >生成ssh:
 
 Linux 与 Mac 都是默认安装了 SSH ，而 Windows 系统安装了 Git Bash 应该也是带了 SSH的。大家可以在终端（win下在 Git Bash 里）输入 ssh 如果出现以下提示证明你本机已经安
 装 SSH， 否则请搜索自行安装下
-![ssh1.png](https://upload-images.jianshu.io/upload_images/5549640-7f9e9e8240c9692c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh1.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134002731.png)
 
 >添加ssh:
 
-![pages2.png](https://upload-images.jianshu.io/upload_images/5549640-b2e51e9afe638188.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![pages2.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134004657.png)
 
-![pages3.png](https://upload-images.jianshu.io/upload_images/5549640-afc1c52ccf367eac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![pages3.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134007841.png)
 这个.ssh文件一般是在系统C盘下的用户下,里面的文件全部是隐藏文件设置显示就可以看到了.
-![ssh.png](https://upload-images.jianshu.io/upload_images/5549640-aa9adce99038e333.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ssh.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134012244.png)
 将文件里面的公钥复制到上面,添加就可以了.
 
 
 ##### 4.开启pages服务
 
-![pages1.png](https://upload-images.jianshu.io/upload_images/5549640-ded7ec92c9dd194a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![pages1.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134014609.png)
 
 选择master分支,保存
-![set.png](https://upload-images.jianshu.io/upload_images/5549640-c8b646fc1b43a8f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![set.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134016767.png)
 这里添加你刚才购买好的域名,绑定即可.
 
 >配置域名
@@ -75,10 +76,10 @@ Linux 与 Mac 都是默认安装了 SSH ，而 Windows 系统安装了 Git Bash 
 1.  A- 将域名指向一个IPV4地址
 2. CNAME-将域名指向另外一个域名
 
-![set1.png](https://upload-images.jianshu.io/upload_images/5549640-102427b3ccf854bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![set1.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134019438.png)
 以上是我配置的所有绑定域名
 添加解析:
-![add.png](https://upload-images.jianshu.io/upload_images/5549640-f3a2f4b8f1151597.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![add.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134021544.png)
 
 确认启用即可,到这里我们就已经为coding上的项目配置好了个性域名了
 
@@ -102,7 +103,7 @@ hexo g
 hexo d
 ```
 基本到这里我们的项目就成功托管到coding上了.
-![success.png](https://upload-images.jianshu.io/upload_images/5549640-b2fedb7bd39452d3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![success.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134024244.png)
 
 然后输入你域名或者coding默认提供的地址,就可以访问我们的站点了.
 
@@ -112,16 +113,16 @@ hexo d
 
 ###### 1.让百度收录你的站点
 首先直接百度搜索你的域名,比如我随意搜一个:
-![site1.png](https://upload-images.jianshu.io/upload_images/5549640-28c86b22d0627bab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![site1.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134026818.png)
 这就说明这个站点没有被百度收录,之后我们选择`提交网址`;
 进入百度站长平台登录成功后选择`用户中心-站点管理-添加网站`;
-![type.png](https://upload-images.jianshu.io/upload_images/5549640-83a57d268acf3c05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![type.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134028739.png)
 按照步骤要求进行即可,最后一步验证网址所有权:
 这里有三种验证方式,我们挑最简单的CNAME来就行了.
-![cname.png](https://upload-images.jianshu.io/upload_images/5549640-c860e42774c01930.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![cname.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134033018.png)
 
 添加一条解析即可,如下:
-![cname1.png](https://upload-images.jianshu.io/upload_images/5549640-20c097e2fe5fb9f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![cname1.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134036376.png)
 
 就这么简单,验证就完成了.
 接下来我们需要生成网站地图`sitemap`,使用sitemap方式向百度提交我们的网址.
@@ -142,20 +143,20 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 ```
 可以看到站点根目录下`public`文件下
-![sitemap.png](https://upload-images.jianshu.io/upload_images/5549640-041be0c4d0a477e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![sitemap.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134039470.png)
 
 会生成两个文件,
 带有baidu的是百度专用的,另外一个是通用的.
 接下来我们将生成的sitemap文件提交给百度,
 `站点管理-站点属性- 链接提交-自动提交-sitemap`
-![sitemap2.png](https://upload-images.jianshu.io/upload_images/5549640-003be8e4b18d0c35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![sitemap2.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134041292.png)
 将域名换成你自己的就行了.
 
 > 到这里我们的站点就算是提交给了百度了,不过百度实在是不可恭维,速度太慢了,一般可能要一个星期左右才能被收录到,所以刚提交完搜不到很正常,过几天在试试应该就能搜索到了.
 
 如果被正常收录了,效果如下:
 
-![blog.png](https://upload-images.jianshu.io/upload_images/5549640-cc71ca6eb743dd1a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![blog.png](关于Hexo6-0搭建个人博客-coding-百度-收录篇/1240-20200309134043509.png)
 
 > 由于篇幅问题,Google收录就放在下篇给大家讲解了
 

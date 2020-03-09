@@ -14,7 +14,7 @@ categories: 设计模式
 >快加入学习的队伍来吧,欢迎各路大神留下宝贵意见.
 
 `什么是MVC(Model View Controller)模式?`
-![mvc模式](https://upload-images.jianshu.io/upload_images/5549640-d19032132e09b611.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![mvc模式](关于MVC-P-的简单介绍/1240-20200309134414327.png)
 
 `MVC`全名是`Model View Controller`，是模型(`model`)－视图(`view`)－控制器(`controller`)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。其中M层处理数据，业务逻辑等(适合做一些业务逻辑处理，比如数据库存取操作，网络操作，复杂的算法，耗时的任务等都在model层处理)；V层处理界面的显示结果(XML布局可以视为V层，显示Model层的数据结果)；C层起到桥梁的作用，来控制V层和M层通信以此来达到分离视图显示和业务逻辑层(在Android中，Activity处理用户交互问题，因此可以认为Activity是控制器，Activity读取V视图层的数据，控制用户输入，并向Model发送数据请求)。
 
@@ -36,7 +36,7 @@ categories: 设计模式
 
 `什么是MVP(Model-View-Presenter)模式?
 `
-![mvp模式](https://upload-images.jianshu.io/upload_images/5549640-a805ca72d8a5219f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![mvp模式](关于MVC-P-的简单介绍/1240-20200309134417733.png)
 
 `MVP `是从经典的模式`MVC`演变而来，它们的基本思想有相通的地方：`Controller`/`Presenter`负责逻辑的处理，`Model`提供数据，`View`负责显示。作为一种新的模式，`MVP`与`MVC`有着一个重大的区别：在`MVP`中`View`并不直接使用`Model`，它们之间的通信是通过`Presenter` (`MVC`中的`Controller`)来进行的，所有的交互都发生在`Presenter`内部，而在`MVC`中`View`会从直接`Model`中读取数据而不是通过 `Controller`。
 

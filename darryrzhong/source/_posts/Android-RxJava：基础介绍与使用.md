@@ -10,7 +10,7 @@ categories: Android
 * 官方定义:`RxJava`是一个反应性扩展的Java VM实现:一个库，用于使用可观察序列组合异步和基于事件的程序
 * 特点:  `Rxjava`由于其基于事件流的链式调用、逻辑简洁 & 使用简单的特点，深受各大 Android开发者的欢迎。
 
-![image.png](https://upload-images.jianshu.io/upload_images/5549640-7f7a66f6477e24af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](Android-RxJava：基础介绍与使用/1240-20200309132131705.png)
 
 ## 功能
 * 基于事件流实现异步操作,等同于 Android中的 AsyncTask 、Handler作用

@@ -368,7 +368,7 @@ ButterKnife.Action<View> action = new ButterKnife.Action<View>() {
 步骤如下:
 打开Android studio:点击File--->Settings--->Plugins--->搜索 Butterknife  Zelezny--->下载安装--->重启Android studio.
 
-![TIM截图20180919210841.png](https://upload-images.jianshu.io/upload_images/5549640-77e6a7632d8860a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180919210841.png](Android常用之Butterknife使用详解/1240-20200309132457130.png)
 
 做完以上步骤,就可以愉快的写代码了.
 
@@ -382,10 +382,10 @@ ButterKnife.Action<View> action = new ButterKnife.Action<View>() {
     }
 ```
 右击Generate,如下:
-![TIM截图20180919211418.png](https://upload-images.jianshu.io/upload_images/5549640-379d8692a252c532.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180919211418.png](Android常用之Butterknife使用详解/1240-20200309132500676.png)
 
 打开就看见我们布局文件中所有控件了.选择你需要的就可以开始了.
-![TIM截图20180919211548.png](https://upload-images.jianshu.io/upload_images/5549640-ff4ae2468ae4c241.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20180919211548.png](Android常用之Butterknife使用详解/1240-20200309132503218.png)
 
 >好了,关于Butterknife注解就结束到这里了,还有很多用法没有介绍到,不过并不妨碍我们愉快的使用Butterknife了,赶快去试试吧.
 

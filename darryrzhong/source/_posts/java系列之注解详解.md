@@ -411,7 +411,7 @@ static class Car{
 
 不管你承认不承认，“有人的地方就有江湖”，我们都说人人平等，但是对于任何一个组织机构而言，它一定有架构的设计有职能的划分。按照职能的重要性，自然而然就有了上下之分。并且，随着模块的粒度划分不同这种上层与底层模块会进行变动，也许某一模块相对于另外一模块它是底层，但是相对于其他模块它又可能是上层
 
-![组织架构.png](https://upload-images.jianshu.io/upload_images/5549640-5e510fc37ca2d467.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![组织架构.png](java系列之注解详解/1240-20200309131827858.png)
 
 公司管理层就是上层，CEO 是整个事业群的上层，那么 CEO 职能之下就是底层。
 
@@ -421,7 +421,7 @@ static class Car{
 
 那么，映射到我们软件实际开发中，一般我们也会将软件进行模块划分，比如业务层、逻辑层和数据层。 
 
-![业务模块.png](https://upload-images.jianshu.io/upload_images/5549640-bcab064f4fc41e1d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![业务模块.png](java系列之注解详解/1240-20200309131833217.png)
 
 业务层中是软件真正要进行的操作，也就是**做什么**。 
 逻辑层是软件现阶段为了业务层的需求提供的实现细节，也就是**怎么做**。 
@@ -530,7 +530,7 @@ public class Person {
 按照决策能力高低或者重要性划分，Person 属于上层模块，Bike、Car 和 Train 属于底层模块。
 
 上层模块不应该依赖于底层模块。 
-![person架构.png](https://upload-images.jianshu.io/upload_images/5549640-5863625361c110cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![person架构.png](java系列之注解详解/1240-20200309131839551.png)
 
 ```java
 public class Person {

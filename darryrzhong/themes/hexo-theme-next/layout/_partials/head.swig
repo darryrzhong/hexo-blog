@@ -4,6 +4,7 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<meta name="referrer" content="no-referrer">
 
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}

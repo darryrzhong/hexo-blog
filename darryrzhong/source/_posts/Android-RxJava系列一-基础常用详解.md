@@ -145,7 +145,7 @@ RxJava 的事件回调方法除了普通事件 onNext() （相当于 onClick() /
 * 在一个正确运行的事件序列中, onCompleted() 和 onError() 有且只有一个，并且是事件序列中的最后一个。需要注意的是，onCompleted() 和 onError() 二者也是互斥的，即在队列中调用了其中一个，就不应该再调用另一个。
 
 
-![Rxjava的观察者模式.jpg](https://upload-images.jianshu.io/upload_images/5549640-2d02072359cd3d10.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Rxjava的观察者模式.jpg](Android-RxJava系列一-基础常用详解/1240-20200309132225914.jpeg)
 
 
 
@@ -322,7 +322,6 @@ RxJava 已经内置了几个 Scheduler :
 ```
 
 > 以上就是Rxjava的基本常用方法了,看到这里你就已经可以愉快的使用Rxjava代替AsyncTask / Handler了,赶紧去试试吧!
-
 
 -------------------------------------------
 

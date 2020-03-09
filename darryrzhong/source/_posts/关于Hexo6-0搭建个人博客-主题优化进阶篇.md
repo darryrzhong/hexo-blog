@@ -30,12 +30,12 @@ categories: hexo
 > 在站点根目录下`_config.yml`中进行基础配置
 建议下载个文本编辑器打开,这里推荐`Sublime Text`,
 
-![set1.png](https://upload-images.jianshu.io/upload_images/5549640-482e1976e130e564.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![set1.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134247952.png)
 
 对应显示效果(显示效果因主题不同而不同,只做描述)
-![show.png](https://upload-images.jianshu.io/upload_images/5549640-bd3bc18775a42712.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![show.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134250715.png)
 
-![show1.png](https://upload-images.jianshu.io/upload_images/5549640-e5ba02014b1ffbcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![show1.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134252415.png)
 
 
 当然了,你们的主题和我的肯定是不一样的,所以下面就开始教大家挑选自己喜欢的主题
@@ -48,12 +48,12 @@ categories: hexo
 
 你可以点击这里选择你喜欢的[Themes](https://hexo.io/themes/),里面有大量美观的主题
 
-![thems.png](https://upload-images.jianshu.io/upload_images/5549640-cdd07a4736fb7e61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![thems.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134254880.png)
 
 > 主题很多,可以慢慢挑选,挑选好了,直接`clone`下来就好了.
 
 我这里以简约著称的`Next`主题为例讲解,本人用的也是这款主题,当然喜欢炫酷一点的小伙伴们可以自行选择,只是优化会略有不同.
-![next.png](https://upload-images.jianshu.io/upload_images/5549640-fe9ac26f718e6b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![next.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134257692.png)
 
 这里有下载主题有两种方式:
 1.通过get 命令方式直接安装
@@ -65,10 +65,10 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 
 进入hexo根目录下,`GitBash`
 
-![clone.png](https://upload-images.jianshu.io/upload_images/5549640-51f908629d495d42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![clone.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134259647.png)
 
 clone成功后,你的Themes文件夹下就会有next主题文件了
-![nextfile.png](https://upload-images.jianshu.io/upload_images/5549640-c0edcb59f5481b7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![nextfile.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134302091.png)
 
 首先介绍下next文件夹下`_config.yml`文件,以后我们凡是修改主题,都是修改这个文件
 
@@ -76,10 +76,11 @@ clone成功后,你的Themes文件夹下就会有next主题文件了
 
 打开blog(`你的博客站点跟目录`)下的_config.yml文件进行设置:
 将`theme: landscape `修改为 `theme: next`
-![config_next.png](https://upload-images.jianshu.io/upload_images/5549640-ae67afe409b32a2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![config_next.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134304808.png)
 
 然后`hexo g`和` hexo s `一下 ,我们来看一下效果:
-![nextshow.png](https://upload-images.jianshu.io/upload_images/5549640-9b1aafc9f9b44a80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![nextshow.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134306585.png)
+
 >好了 ,没错就是这个样子(的确是丑了点,所以需要你自己去优化成你自己想要的样子啦)
 
 当然你也可以直接clone我配置好了的主题[darryrzhong-next](https://github.com/darryrzhong/hexo-theme-next).顺便star一下最好啦.
@@ -159,21 +160,21 @@ clone成功后,你的Themes文件夹下就会有next主题文件了
 
 ```
 做完这一步,头像也就设置完成了.
-![avatar1.png](https://upload-images.jianshu.io/upload_images/5549640-9f456601e84520fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![avatar1.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134313803.png)
 
 
 # 2.设置个人社交图标链接
 
-![social.png](https://upload-images.jianshu.io/upload_images/5549640-45b9b5c535dbdcaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![social.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134316018.png)
 
  打开`themes/next/_config.yml`,找到`social`;
-![social1.png](https://upload-images.jianshu.io/upload_images/5549640-20c5861e4294c883.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![social1.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134318591.png)
 
 其中`name`为你图标的名字,你可以去[Font Awesome](http://www.bootcss.com/p/font-awesome/#)中挑选你喜欢的,然后复制名字就可以了
 如 icon-user-md 只需要user-md就可以了,next里面已经集成好了.如果next找不到图标的话,图标就会被一个问号所取代.
 
 # 3.设置RSS
-![rss.png](https://upload-images.jianshu.io/upload_images/5549640-250cccfcbe0a9eb7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![rss.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134321104.png)
 
 来到你的站点根目录(`比如我的blog/`)下;
 执行 GitBash 命令 : `$ npm install --save hexo-generator-feed`安装插件,插件会放在
@@ -192,7 +193,7 @@ plugins: hexo-generate-feed
 
 
 # 4.设置酷炫动态背景
-![background.png](https://upload-images.jianshu.io/upload_images/5549640-ecff9cc69ba138dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![background.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134324245.png)
 
 新版本的next已经支持canvas-nest了,所以直接添加代码就可以了
 打开`next/layout/_layout.swig`文件在</body>之前加上以下代码;
@@ -238,9 +239,10 @@ sidebar:
 
 # 6.设置网站logo
 效果如下:
-![logo.png](https://upload-images.jianshu.io/upload_images/5549640-29eeceed36f1aa40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![logo.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134328468.png)
  这个小图标就是你的logo了.
 打开主题配置文件`_config.yml`    ,找到字段`favicon:`;
+
 ```
 favicon:
   small: /images/favicon-16x16-next.png
@@ -252,31 +254,33 @@ favicon:
 对于图标大小也是有要求的,看实例就知道了,就不做过多的说明了.
 # 7.设置左上角或者右上角的fork me on github效果
 显示效果如下:
-![fork me github.png](https://upload-images.jianshu.io/upload_images/5549640-db9ba6926349302a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![fork me github.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134330776.png)
 实现方法如下:
 当然有很多种颜色和效果,你可以在[这里](https://blog.github.com/2008-12-19-github-ribbons/)选择你需要的效果;然后复制你选择效果右侧的代码;
+
 ```
 <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
 ```
 打开`next\layout\_layout.swig`,将刚才复制的代码黏贴到`<div class="headband"></div>`的下面;
 
-![github.png](https://upload-images.jianshu.io/upload_images/5549640-d3027a15a753d407.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![github.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134332809.png)
 
 重新运行下,看看效果吧;
 
 # 8. 设置顶部滚动加载条
 效果如下:
-![bar.png](https://upload-images.jianshu.io/upload_images/5549640-c14b7b4139476942.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![bar.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134335026.png)
 
 打开`next\layout\_partials\head`文件，添加以下代码:
 ```
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
 <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 ```
-![barset.png](https://upload-images.jianshu.io/upload_images/5549640-125852e11f2f1929.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![barset.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134337653.png)
 以上加载条就可以正常显示了,默认颜色是粉色的,本人觉得粉色的也挺好看就没改了,
 当然你可以自定义你想要的颜色,做法如下:
 在刚才添加的代码后面再加上以下代码:
+
 ```
 <style>
     .pace .pace-progress {
@@ -294,7 +298,7 @@ favicon:
 ```
 自定义加载条就大功改成了;
 # 9.自定义博客底部显示效果
-![bottom.png](https://upload-images.jianshu.io/upload_images/5549640-d8397b41d9235db7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![bottom.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134344126.png)
 
 具体实现如下:
 1.隐藏网页底部powered By Hexo / 强力驱动
@@ -350,7 +354,7 @@ busuanzi_count:
   post_views: true
   post_views_icon: eye
 ```
-  
+
 # 10.为首页文章添加阴影边框效果
 打开`next\source\css\_custom\custom.styl`文件,添加以下代码:
 ```
@@ -364,11 +368,11 @@ busuanzi_count:
   }
 ```
 重新运行下服务器,效果如下:
-![shandown.png](https://upload-images.jianshu.io/upload_images/5549640-4cd76ff64eba4643.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![shandown.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134349385.png)
 
 # 11.为首页添加自定义菜单栏标签
 效果如下:
-![menu.png](https://upload-images.jianshu.io/upload_images/5549640-05e159c9ef5842e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![menu.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134351447.png)
 
 实现如下:
 进入站点根目录下,使用`GitBash`新建页面;
@@ -377,15 +381,15 @@ $ hexo new page "photo"
 $ hexo new page "welfare"
 
 这里我新建三个菜单标签,分别是音乐、摄影、福利.
-![newPage.png](https://upload-images.jianshu.io/upload_images/5549640-aa5ab1f48c4f6296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![newPage.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134353962.png)
 
 可以看到,新建页面在source文件对于的文件夹里;
 
 打开主题配置文件`_config.yml`找到字段`menu`,添加对应菜单;
-![menu1.png](https://upload-images.jianshu.io/upload_images/5549640-842d5d2ec91aaf01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![menu1.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134355565.png)
 
 添加完菜单标签项后,效果如下:
-![menu2.png](https://upload-images.jianshu.io/upload_images/5549640-81c13462a61274a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![menu2.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134358217.png)
 
 可以看到标签名还是英文的,并且pohto项是空白的,之前已经说过,空白代表这个图标找不到,所以换一个就行了,下面我们来完善一下,将标签名改为中文;
 
@@ -399,7 +403,7 @@ menu:
   archives: 归档
   categories: 分类
 ```
-![menu3.png](https://upload-images.jianshu.io/upload_images/5549640-f67c10898f2f31ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![menu3.png](关于Hexo6-0搭建个人博客-主题优化进阶篇/1240-20200309134400520.png)
 
 名称一定要和我们主题中的名称一致,到这里我们的菜单栏也就完成了.
 

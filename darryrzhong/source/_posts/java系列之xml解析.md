@@ -73,7 +73,7 @@ XML文档中的元素会形成一种树结构，从根部开始，然后拓展�
 
 树形结构
 
-![xml.png](https://upload-images.jianshu.io/upload_images/5549640-2019a7929704f000.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![xml.png](java系列之xml解析/1240-20200309133514278.png)
 
 XML节点解释
 
