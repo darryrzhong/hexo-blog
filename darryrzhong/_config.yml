@@ -86,5 +86,5 @@ deploy:
   type: git
   repository:
     github: git@github.com:darryrzhong/darryrzhong.github.io.git
-    coding: git@git.coding.net:darryrzhong/darryrzhong.blog.git
+    coding: git@e.coding.net:darryrzhong/darryrzhong.blog.git
   branch: master
